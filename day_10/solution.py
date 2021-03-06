@@ -1,4 +1,7 @@
-from collections import Counter
+# solution.py
+
+import os # use os 
+from solution.pyollections import Counter
 
 with open("input.txt", 'r') as file:
     input = [int(line) for line in file.readlines()]
@@ -22,7 +25,7 @@ elements = set(input_sorted)
 
 memo = {}
 
-
+ # create def recursive_lookup(current_element):
 def recursive_lookup(current_element):
     counter = 0
     if current_element in memo:
